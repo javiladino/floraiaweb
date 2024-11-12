@@ -125,7 +125,7 @@ body {
 
 /* promesse */
 .promesse {
-    padding: 4rem 2rem;
+    padding: 2rem 2rem;
     background: var(--light);
 }
 
@@ -180,8 +180,17 @@ body {
 
 /* Features */
 .features {
-    padding: 4rem 2rem;
+    padding: 4rem 3rem;
     background: var(--light);
+    text-align: center;
+}
+
+.features h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary );
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
 }
 
 .features-grid {
@@ -203,8 +212,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 8px;
-    
+    border-radius: 8px; 
     display: block;
 }
 
@@ -231,9 +239,18 @@ body {
 
 /* Stats */
 .stats {
-    padding: 4rem 2rem;
-    background: var(--primary);
-    color: white;
+    padding: 4rem 4rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../assets/rayon_fullimg.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+.stats h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--light );
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
 }
 
 .stats-grid {
@@ -241,13 +258,231 @@ body {
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 3rem;
+}
+.stats-item {
+    padding: 2.5rem 1.5rem;
+    width: 100%;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    border-radius: 8px;
+    background: var(--secondary);
+}
+.stats-item h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--light );
+    font-size: 4.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 0.6;
+}
+.stats-item h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    width: 100%;
+    color: var(--light);
+}
+
+
+/* Catalogue */
+.catalogue {
+    padding: 4rem 3rem;
+    background: var(--white);
     text-align: center;
 }
 
-.stat-item h3 {
+.catalogue h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary );
     font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.catalogue-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.catalogue-card {
+    width: 100%;
+    background-color: var(--light);
+    position: relative;
+
+}
+
+.catalogue-card img {
+    padding: 4rem 3rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.catalogue h3 {
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    bottom: 0;
+    background-color: var(--white);
+    text-align: left;
+    color: var(--primary);
+    
+}
+
+.catalogue p {
+    width: 100%;
+    padding: 10px;
+    bottom: 0;
+    margin: 0;
+    background-color: var(--white);
+    text-align: left;
+    color: var(--secondary);
+    
+}
+
+
+/* Confiance */
+.confiance {
+    padding: 4rem 3rem;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('../assets/rayon_fullimg.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    margin-top: 80px
+}
+
+.confiance-logos {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 4rem;
+    background: var(--white);
+    border-radius: 8px;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+.confiance-logos .logos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    justify-items: center;
+    align-items: center;
+}
+.confiance-logos h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary );
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.confiance-texte {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 3rem 4rem;
+}
+
+.confiance-texte .highlight {
+    color: var(--secondary);
+    font-weight: bold;
+}
+
+.confiance-texte h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    width: 100%;
+    color: var(--primary);
+}
+
+.confiance-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+.confiance-item {
+    padding: 4rem 2rem;
+    width: 100%;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    border: 3px solid var(--secondary);
+    border-radius: 8px;
+}
+
+.confiance-item h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    width: 100%;
+    color: var(--secondary);
+}
+
+
+/* Choisir */
+.choisir {
+    padding: 4rem 3rem;
+    background: var(--light);
+    text-align: center;
+}
+
+.choisir h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary );
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.choisir-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.choisir-card {
+    padding: 1rem 2rem;
+    width: 100%;
+    background: var(--secondary);
+    border-radius: 8px;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 0px;
+}
+
+.choisir-card h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    bottom: 0;
+    text-align: left;
+    color: var(--white);  
+}
+
+.choisir-card p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 0rem 1rem;
+    margin: 0;
+    text-align: left;
+    color: var(--white);  
+    line-height: 1.3;
+}
+
+.choisir-card img {
+    width: 120px;
+    height: auto;
+    max-height: 100%;
+    max-width: 120%;
 }
 
 /* Testimonials */
@@ -271,6 +506,52 @@ body {
     background: linear-gradient(135deg, var(--secondary), var(--primary));
     color: white;
     text-align: center;
+}
+
+.stats {
+    padding: 4rem 4rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../assets/rayon_fullimg.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+.cta h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--light );
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.stats-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+.stats-item {
+    padding: 2.5rem 1.5rem;
+    width: 100%;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    border-radius: 8px;
+    background: var(--secondary);
+}
+.stats-item h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--light );
+    font-size: 4.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 0.6;
+}
+.stats-item h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    width: 100%;
+    color: var(--light);
 }
 
 .button {
@@ -308,7 +589,7 @@ body {
 /* Footer */
 .footer {
     padding: 2rem;
-    background: var(--dark);
+    background: var(--secondary);
     color: white;
     text-align: center;
 }
