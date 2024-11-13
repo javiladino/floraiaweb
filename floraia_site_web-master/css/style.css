@@ -214,7 +214,20 @@ body {
     display: block;
 }
 
-
+.nos-produits {
+    border: none;
+    box-shadow: none;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+.nos-produits h2 {
+    font-family: sans-serif;
+    color: var(--primary);
+    text-align: center;
+    font-size: 3.2rem;
+}
 .feature-icon {
     font-size: 4rem;
     color: var(--primary);
