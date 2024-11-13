@@ -205,6 +205,12 @@ body {
     overflow: hidden;
     position: relative;
 }
+.features h2{
+    font-family: sans-serif;
+    color: var(--primary);
+    text-align: center;
+    font-size: 3.2rem;
+}
 
 .feature-card img {
     width: 100%;
