@@ -327,23 +327,19 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
 }
 
 .catalogue-card {
-    width: 100%;
     background-color: var(--light);
     position: relative;
 
 }
 
 .catalogue-card img {
-    padding: 4rem 3rem;
+    padding: 3rem 2rem;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
 }
 
 .catalogue h3 {
@@ -370,13 +366,20 @@ body {
 
 
 /* Confiance */
+.confiance-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
 .confiance {
     padding: 4rem 3rem;
     background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('../assets/rayon_fullimg.png');
     background-size: cover;
     background-position: center;
     text-align: center;
-    margin-top: 80px
+    margin-top: 80px;
 }
 
 .confiance-logos {
@@ -384,9 +387,10 @@ body {
     padding: 3rem 4rem;
     background: var(--white);
     border-radius: 8px;
+    text-align: center;
 }
 .confiance-logos img {
-    padding: 1rem;
+    padding: 2rem;
 }
 .confiance-logos h2 {
     font-family: 'Montserrat', sans-serif;
@@ -414,17 +418,15 @@ body {
     width: 100%;
     color: var(--primary);
 }
-
-.confiance-grid {
-    max-width: 1200px;
-    margin: 0 auto;
+.confiance-grid-items {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
+
 .confiance-item {
     padding: 4rem 2rem;
-    width: 100%;
+
     box-shadow: 0 2px 15px rgba(0,0,0,0.1);
     text-align: center;
     border: 3px solid var(--secondary);
@@ -437,7 +439,10 @@ body {
     width: 100%;
     color: var(--secondary);
 }
-
+.confiance-item img {
+    max-width: 100px; /* Ajusta el tamaño según tus necesidades */
+    margin-bottom: 10px;
+}
 
 /* Choisir */
 .choisir {
@@ -515,11 +520,12 @@ body {
 .cta-grid-head {
     display: grid;
     grid-template-columns: auto auto; 
+    text-align: center;
     align-items: center;
-    justify-content:flex-start;
 }
 .cta-grid-circles {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
 }
 .image-container {
@@ -527,8 +533,8 @@ body {
     display: inline-block;
 }
 .cta-grid-circles img{
-    padding: 1.5rem;
-    max-width: 120%;
+    padding: 1rem;
+    max-width: 100%;
     height: auto;
 }
 .circle-overlay {
@@ -560,7 +566,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: var(--light );
     font-size: 3rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
     line-height: 1.2;
 }
 .cta h2 {
@@ -715,6 +721,61 @@ body {
     height: auto; 
 }
 
+.contact-grid-afd-text p {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary );
+    font-size: 1.2rem;
+    position: relative;
+    padding-left: 40px; /* Espacio para el icono */
+    margin: 10px 0;
+}
+
+.contact-phone::before {
+    content: url('../assets/phone.png'); /* Icono de teléfono */
+    position: absolute;
+    left: 0;
+    width: 16px;
+    height: 16px;
+}
+
+.contact-email::before {
+    content: url('../assets/email.png'); /* Icono de email */
+    position: absolute;
+    left: 0;
+    top: 20%;
+    width: 16px;
+    height: 16px;
+}
+
+.contact-address::before {
+    content: url('../assets/pin.png'); /* Icono de dirección */
+    position: absolute;
+    left: 0;
+    top: 0%;
+    width: 16px;
+    height: 16px;
+}
+
+.contact-departments::before {
+    content: url('../assets/truck.png'); /* Icono de departamentos */
+    position: absolute;
+    left: 0;
+    top: 0%;
+    width: 16px;
+    height: 16px;
+}
+
+.contact-hours::before {
+    content: url('../assets/horaire.png'); /* Icono de horas */
+    position: absolute;
+    left: 0;
+    top: 0%;
+    width: 16px;
+    height: 16px;
+}
+.contact a {
+    margin-top: 20px;
+}
 
 /* Footer */
 .footer {
@@ -773,7 +834,9 @@ body {
         justify-self: start; /* alinea el logo a la izquierda */
         margin-top: 10px; /* espaciado entre el h1 y el logo */
     }
-
+    .cta-grid-circles {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
     .stats-grid {
         grid-template-columns: 1fr;
     }
@@ -781,4 +844,9 @@ body {
         grid-template-columns: 1fr; /* Cambia a una columna */
         text-align: center;
     }
+    
+    .confiance-grid-items {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
+    
 }
